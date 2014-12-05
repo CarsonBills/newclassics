@@ -6,8 +6,12 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
-  post '/write' do
-    binding.pry
+  get '/write' do
+    author = params['author']
+    word = params['word']
+    max_word_length = 100
+    words_after = Author.words_after(word, author)
+    @sentence = Author.write(word)
   end
 
 end
