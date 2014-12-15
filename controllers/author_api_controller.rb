@@ -7,7 +7,6 @@ class AuthorAPIController < ApplicationController
     text = Author.words_after(word, author)
     sentence = Author.write(word)
 
-
     {
       word: word,
       author: author,

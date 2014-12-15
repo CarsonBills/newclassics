@@ -1,0 +1,1 @@
+var Passage = Backbone.Model.extend({});
