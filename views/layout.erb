@@ -9,13 +9,18 @@
   <script src='/javascripts/lib/jquery.js'></script>
   <script src='/javascripts/lib/underscore.js'></script>
   <script src='/javascripts/lib/backbone.js'></script>
+	
+	<script id='passage-template' type='template'>
+	  <h2 class='passage'>
+	  	<%%= passage %>
+	  </h2>
+	</script>
 
-  <script id='passage-template' type='template'></script>
 
 	<script src="/javascripts/models/Passage.js"></script>
 	<script src="/javascripts/collections/PassageList.js"></script>
 	<script src="/javascripts/views/PassageView.js"></script>
-	<script src="/javascripts/views/GameView.js"></script>
+	<script src="/javascripts/views/PassageListView.js"></script>
 </head>
 <body>
 	<%= yield %>

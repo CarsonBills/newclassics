@@ -1,11 +1,27 @@
 <h1>Generated passage</h1>
 
-<p>
-	<%= @sentence %>
-</p>
+
+<div class="passage">
+	... generating
+</div>
 
 <script charset="utf-8">
-
+	
 	var passages = new PassageList();
+	var passageListView;
 
+	$(function(){
+		passageListView = new PassageListView({
+			collection: passages,
+			el: $('div.passage')
+		});
+
+		passages.fetch({
+			data: $.param({ author: 'austen', word: 'the'}), 
+			success: function(){
+				passageListView.render();
+			}
+		});
+	})
 </script>
+

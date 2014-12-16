@@ -1,16 +1,15 @@
 class AuthorAPIController < ApplicationController
 
-  get '/write' do
+  get "/write" do
     content_type :json
     author = params['author']
     word = params['word']
     text = Author.words_after(word, author)
-    sentence = Author.write(word)
-
+    passage = Author.write(word)
     {
       word: word,
       author: author,
-      sentence: sentence
+      passage: passage
     }.to_json
   end
 
