@@ -1,3 +1,41 @@
 body {
 	background-color: #F1F1D4;
 }
+
+div.paper {
+	border-style: solid;
+	border-width: 2px;
+	display: block;
+	padding: 5%;
+	width: 700px;
+	height: 400px;
+	background-color: #ececec;
+	margin: 0 auto;
+}
+
+div.passage {
+
+}
+
+h2.passage {
+	text-align: center;
+}
+
+h2.welcome {
+	text-align: center;
+}
+
+div.header {
+	margin: 0 auto;
+}
+.logo {
+	display: block;
+	margin: 0 auto;
+	height: 150px;
+	width: 300px;
+}
+
+h1.header {
+	display: block;
+	text-align: center;
+}
