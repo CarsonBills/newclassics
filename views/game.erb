@@ -1,4 +1,4 @@
-<h3>Generated passage</h3>
+<h3>Guess the Author</h3>
 
 
 <div class="paper">
@@ -29,6 +29,7 @@
 			collection: passages,
 			el: $('div.passage')
 		});
+		$("input:submit.guess").hide();
 
 		fetchPassage();
 		submitAnswer();

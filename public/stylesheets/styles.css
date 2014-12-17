@@ -31,6 +31,7 @@ div.header {
 .logo {
 	display: block;
 	margin: 0 auto;
+	margin-top: 20px;
 	height: 150px;
 	width: 300px;
 }

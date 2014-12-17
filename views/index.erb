@@ -7,19 +7,17 @@
 	</form>
 </p>
 
-
+<div class="paper">
+	<div class="passage">
+		<h2 class="welcome"> Rediscover the Classics </h2>
+	</div>
+</div>
 
 <p>
 	<form action="/game" method="get">
 		<input class="game" type="submit" value="Play!">
 	</form>
 </p>
-
-<div class="paper">
-	<div class="passage">
-		<h2 class="welcome"> Rediscover the Classics </h2>
-	</div>
-</div>
 
 <script charset="utf-8">
 	
@@ -31,7 +29,7 @@
 			collection: passages,
 			el: $('div.passage')
 		});
-
+		$("input:submit.write").hide();
 		submitAuthor();
 
 	})
