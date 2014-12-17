@@ -5,6 +5,19 @@
 	...Generating
 </div>
 
+<p>
+	<form>
+		<input type="text" class="guess" >
+		<input type="submit" class="guess"  value="guess">
+	</form>
+</p>
+
+<p>
+	<form action="/game" method="get">
+		<input class="game" type="submit" value="Play Again!">
+	</form>
+</p>
+
 <script charset="utf-8">
 	var passages = new PassageList();
 	var passageListView;
@@ -15,6 +28,9 @@
 			collection: passages,
 			el: $('div.passage')
 		});
+
 		fetchPassage();
+		submitAnswer();
+
 	})
 </script>
