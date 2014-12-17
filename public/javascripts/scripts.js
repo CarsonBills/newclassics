@@ -1,11 +1,11 @@
 console.log("scripts loaded!")
 
 array_of_authors = [
-"melville", "dickens",
- "twain", "shakespeare", 
- "homer", "austen", 
- "wallace", "joyce",
- "hemingway", "fitzgerald",
+"Melville", "Dickens",
+ "twain", "Shakespeare", 
+ "Homer", "Austen", 
+ "Wallace", "Joyce",
+ "Hemingway", "Fitzgerald",
  ]
 
 function fetchPassage() {
