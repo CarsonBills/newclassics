@@ -1,8 +1,9 @@
 function fetchPassage() {
 			console.log(":)")
+			var author = $("input.author").val();
 			passages.fetch({
 				data: $.param({ 
-				author: 'austen', 
+				author: author, 
 				word: 'the'
 				}), 
 			success: function(){
