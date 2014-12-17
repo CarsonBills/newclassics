@@ -4,7 +4,8 @@ array_of_authors = [
 "melville", "dickens",
  "twain", "shakespeare", 
  "homer", "austen", 
- "wallace",
+ "wallace", "joyce",
+ "hemingway", "fitzgerald",
  ]
 
 function fetchPassage() {
