@@ -2,9 +2,8 @@
 
 <p>
 	<form action="/write" method="get">
-		<input type="text" name="author" placeholder="author?">
-		<input type="text" name="word" placeholder="first word?">
-		<input type="submit" value="Raise the dead!">
+		<input type="text" class='author' name="author" placeholder="author?">
+		<input class="write" type="submit" value="Raise the dead!">
 	</form>
 </p>
 
@@ -12,9 +11,27 @@
 
 <p>
 	<form action="/game" method="get">
-		<input type="text" name="author_1" placeholder="author?">
-		<input type="text" name="author_2" placeholder="author?">
-		<input type="text" name="word" placeholder="first word?">
-		<input type="submit" value="Play!">
+		<input class="game" type="submit" value="Play!">
 	</form>
 </p>
+
+<div class="passage">
+	... generating
+</div>
+
+
+<script charset="utf-8">
+	
+	var passages = new PassageList();
+	var passageListView;
+
+	$(function(){
+		passageListView = new PassageListView({
+			collection: passages,
+			el: $('div.passage')
+		});
+
+		submitAuthor();
+
+	})
+</script>

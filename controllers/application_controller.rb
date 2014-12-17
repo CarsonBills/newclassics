@@ -13,7 +13,6 @@ class ApplicationController < Sinatra::Base
     max_word_length = 100
     words_after = Author.words_after(word, author)
     @sentence = Author.write(word)
-    erb :write
   end
 
   get '/game' do
