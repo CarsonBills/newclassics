@@ -1,6 +1,13 @@
+array_of_authors = [
+"melville", "dickens",
+ "twain", "shakespeare", 
+ "homer", "austen"
+ ]
+
 function fetchPassage() {
 			console.log(":)")
-			var author = $("input.author").val();
+			var author = $("input.author").val() 
+				|| randomAuthor(array_of_authors);
 			passages.fetch({
 				data: $.param({ 
 				author: author, 
@@ -23,4 +30,8 @@ function submitAuthor(){
 		e.preventDefault();
 		fetchPassage();
 	});
+}
+
+function randomAuthor(array){
+	 return array[Math.floor ( Math.random() * array.length )]
 }
