@@ -60,7 +60,7 @@ function submitAnswer(){
 }
 
 function correctAnswer(){
-	$("h3.result").html("CORRECT!<p> ♪<(^_^<)♪ ♪(>^_^)>♪</p>")
+	$("h3.result").html("CORRECT!<p> ♪ &nbsp; <(^_^<) &nbsp; ♪ ♪ &nbsp;(>^_^)> &nbsp;♪</p>")
 	fetchBiography();
 
 }
