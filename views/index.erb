@@ -1,35 +1,21 @@
 
 
 <p>
-	<form action="/write" method="get">
+	<form class="write" action="/write" method="get">
 		<a href="/write">Write</a>
 	</form>
 </p>
 
-<div class="paper">
-	<div class="passage">
-	</div>
-</div>
-
 <p>
-	<form action="/game" method="get">
+	<form class="game" action="/game" method="get">
 		<a href="/game">Game</a>
 	</form>
 </p>
 
 <script charset="utf-8">
-	
-	var passages = new PassageList();
-	var passageListView;
 
 	$(function(){
-		passageListView = new PassageListView({
-			collection: passages,
-			el: $('div.passage')
-		});
-		$("input:submit.write").hide();
-		$("div.paper").hide();
-		submitAuthor();
-
+		loadIndex();
 	})
+	
 </script>

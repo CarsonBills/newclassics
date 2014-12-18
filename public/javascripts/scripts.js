@@ -87,3 +87,12 @@ function fetchBiography(){
 	});
 }
 
+function loadIndex(){
+		$(".text_logo").hide();
+		$("form.write").hide();
+		$("form.game").hide();
+		$(".text_logo").fadeIn(1000);
+		$("form.write").fadeIn(2000);
+		$("form.game").fadeIn(3000);
+}
+
