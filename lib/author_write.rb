@@ -2,8 +2,7 @@ module Author
 
   def self.words_after(word, author)
     @author = author
-    # text = File.read("./app/lib/Authors/#{@author}/#{@author}.txt")
-    text = File.read("./lib/Foo/bar.txt")
+    text = File.read("./app/lib/authors/#{@author}/#{@author}.txt")
     pattern = Regexp.new(word + '\s(\w+)')
     text.scan(pattern).flatten
   end
