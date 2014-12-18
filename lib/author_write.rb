@@ -7,6 +7,10 @@ module Author
     text.scan(pattern).flatten
   end
 
+  def self.biography(author)
+    @author = author
+    biography = File.read("./lib/authors/#{@author}/#{@author}_bio.txt")
+  end
 
   def self.write(first_word, max_word_length=100)
     words = [first_word]

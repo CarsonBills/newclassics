@@ -5,6 +5,8 @@
 <div class="paper">
 	<div class="passage">
 	</div>
+	<div class="biography">
+	</div>
 </div>
 
 <p>
@@ -34,10 +36,16 @@
 
 <script charset="utf-8">
 	var passages = new PassageList();
+	var biographies = new BiographyList();
 	var passageListView;
+	var biographyListView;
 
 
 	$(function(){
+		biographyListView = new BiographyListView({
+			collection: biographies,
+			el: $('div.biography')
+		})
 		passageListView = new PassageListView({
 			collection: passages,
 			el: $('div.passage')

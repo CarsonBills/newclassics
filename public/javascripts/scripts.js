@@ -61,10 +61,22 @@ function submitAnswer(){
 
 function correctAnswer(){
 	console.log("RIGHT!")
+	fetchBiography();
 }
 
 function incorrectAnswer(){
 	console.log("WRONG!")
 }
 
+function fetchBiography(){
+	biographies.fetch({
+		data: $.param({
+			author: author
+		}),
+		success: function(){
+			biographyListView.render();
+			$("div.passage").hide();
+		}
+	});
+}
 

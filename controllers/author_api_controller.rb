@@ -13,4 +13,13 @@ class AuthorAPIController < ApplicationController
     }.to_json
   end
 
+  get "/bio" do
+    content_type :json
+    author = params['author']
+    biography = Author.biography(author)
+    {
+      author: author,
+      biography: biography
+    }.to_json
+  end
 end

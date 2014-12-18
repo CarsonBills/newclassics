@@ -1,0 +1,1 @@
+var Biography = Backbone.Model.extend({});
