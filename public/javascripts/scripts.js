@@ -60,12 +60,13 @@ function submitAnswer(){
 }
 
 function correctAnswer(){
-	console.log("RIGHT!")
+	$("h3.result").html("CORRECT!<p> ♪<(^_^<)♪ ♪(>^_^)>♪</p>")
 	fetchBiography();
+
 }
 
 function incorrectAnswer(){
-	console.log("WRONG!")
+	$("h3.result").html("WRONG!<p>(╯°□°)╯︵ ┻━┻</p>")
 	fetchBiography();
 }
 
