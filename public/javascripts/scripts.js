@@ -66,6 +66,7 @@ function correctAnswer(){
 
 function incorrectAnswer(){
 	console.log("WRONG!")
+	fetchBiography();
 }
 
 function fetchBiography(){
