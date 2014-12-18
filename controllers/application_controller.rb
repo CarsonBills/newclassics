@@ -7,6 +7,10 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  get '/write' do
+    erb :write
+  end
+
   get '/game' do
     erb :game
   end

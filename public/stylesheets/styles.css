@@ -1,20 +1,35 @@
 body {
-	background-color: #F1F1D4;
+	background-color: #16294c;
+	color: black;
+	font-family: 'Lora', serif;
 }
-
+a {
+	color: white;
+	font-family: 'Lora', serif;
+	text-decoration: none;
+}
+h3 {
+	color: white;
+	text-align: center;
+}
 div.paper {
 	border-style: solid;
 	border-width: 2px;
 	display: block;
 	padding: 5%;
 	width: 700px;
-	height: 400px;
+	height: 20%;
 	background-color: #ececec;
 	margin: 0 auto;
 }
 
 div.passage {
 
+}
+
+form {
+	display: block;
+	text-align: center;
 }
 
 h2.passage {
@@ -26,14 +41,22 @@ h2.welcome {
 }
 
 div.header {
-	margin: 0 auto;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
 }
-.logo {
-	display: block;
+.feather {
+	display: inline-block;
 	margin: 0 auto;
 	margin-top: 20px;
 	height: 150px;
 	width: 300px;
+}
+
+.text_logo {
+	display: block;
+	margin: 0 auto;
 }
 
 h1.header {

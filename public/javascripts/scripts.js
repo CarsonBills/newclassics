@@ -18,7 +18,9 @@ function fetchPassage() {
 				word: 'the'
 				}), 
 			success: function(){
+				$("div.paper").fadeIn(200);
 				passageListView.render();
+				$("h3.loading").hide();
 			}
 	});
 }

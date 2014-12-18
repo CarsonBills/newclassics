@@ -1,5 +1,6 @@
-<h3>Guess the Author</h3>
+<h3>Below, Guess the Author</h3>
 
+<h3 class="loading">...</h3>
 
 <div class="paper">
 	<div class="passage">
@@ -30,7 +31,7 @@
 			el: $('div.passage')
 		});
 		$("input:submit.guess").hide();
-
+		$("div.paper").hide();
 		fetchPassage();
 		submitAnswer();
 
