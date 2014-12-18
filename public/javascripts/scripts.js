@@ -10,7 +10,7 @@ array_of_authors = [
 
 function fetchPassage() {
 			console.log(":)")
-			author = $("input.author").val() 
+			author = $("select.write").val()
 				|| randomAuthor(array_of_authors);
 			passages.fetch({
 				data: $.param({ 
@@ -50,7 +50,7 @@ function submitAnswer(){
 		}); 	
 	$("input:submit.guess").on("click", function(e){
 		e.preventDefault();
-		var answer = $("input:text.guess").val()
+		var answer = $("select.guess").val()
 		if (answer == author) {
 			correctAnswer();
 			} else {
