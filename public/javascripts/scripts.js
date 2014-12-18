@@ -78,6 +78,8 @@ function fetchBiography(){
 		success: function(){
 			biographyListView.render();
 			$("div.passage").hide();
+			$("input:submit.game").show();
+			$("input:submit.guess").hide();
 		}
 	});
 }

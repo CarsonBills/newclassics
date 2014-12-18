@@ -10,7 +10,7 @@
 </div>
 
 <p>
-	<form>
+	<div class='author_select'>
 		<select class="guess">
 			<option value="">Select an Author</option>
 			<option value="austen">Jane Austen</option>
@@ -24,8 +24,8 @@
 			<option value="twain">Mark Twain</option>
 			<option value="wallace">David Foster Wallace</option>
 		</select>
-		<input type="submit" class="guess"  value="=>">
-	</form>
+		<input type="submit" class="guess"  value="Guess">
+	</div>
 </p>
 
 <p>
@@ -50,6 +50,7 @@
 			collection: passages,
 			el: $('div.passage')
 		});
+		$("input:submit.game").hide();
 		$("div.paper").hide();
 		fetchPassage();
 		submitAnswer();

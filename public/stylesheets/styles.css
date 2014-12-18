@@ -29,7 +29,36 @@ div.passage {
 
 }
 
+div {
+	display: block;
+	text-align: center;
+}
+div.author_select{
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	width: 240px;
+	height: 34px;
+/*	overflow: hidden;*/
+	background: url(/images/new_arrow.png) no-repeat right #ddd;
+	border: 1px solid #ccc;
+}
+.author_select select{
+	background: transparent;
+	width: 230px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1.5;
+	border: 0;
+	border-radius: 0;
+	height: 34px;
+	-webkit-appearance: none;
+}
 form {
+	display: block;
+	text-align: center;
+}
+p {
 	display: block;
 	text-align: center;
 }
@@ -44,7 +73,7 @@ h2.welcome {
 }
 
 div.header {
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 300px;
