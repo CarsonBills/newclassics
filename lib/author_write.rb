@@ -2,6 +2,9 @@ module Author
 
   def self.words_after(word, author)
     @author = author
+
+    puts Dir["./*"]
+
     text = File.read(File.dirname(__FILE__) + "/Authors/#{@author}/#{@author}.txt")
     pattern = Regexp.new(word + '\s(\w+)')
     text.scan(pattern).flatten
