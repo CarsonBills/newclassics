@@ -21,6 +21,7 @@ function fetchPassage() {
 				$("div.paper").fadeIn(200);
 				passageListView.render();
 				$("h3.loading").hide();
+
 			}
 	});
 }
@@ -35,7 +36,9 @@ function submitAuthor(){
 	$("input:submit.write").on("click", function(e){
 		e.preventDefault();
 		fetchPassage();
+	$("input:submit.write").hide();
 	});
+
 }
 
 function randomAuthor(array){
