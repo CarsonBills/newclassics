@@ -1,6 +1,7 @@
 body {
 	background-color: #16294c;
 	color: black;
+	font-size: 22px;
 	font-family: 'Lora', serif;
 }
 a {
@@ -33,6 +34,7 @@ form {
 }
 
 h2.passage {
+	font-size: 18px;
 	text-align: center;
 }
 
