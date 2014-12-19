@@ -36,7 +36,7 @@ function submitAuthor(){
 	$("input:submit.write").on("click", function(e){
 		e.preventDefault();
 		fetchPassage();
-	$("input:submit.write").hide();
+	// $("input:submit.write").hide();
 	});
 
 }
@@ -65,7 +65,6 @@ function submitAnswer(){
 function correctAnswer(){
 	$("h3.result").html("CORRECT!<p> ♪ &nbsp; <(^_^<) &nbsp; ♪ ♪ &nbsp;(>^_^)> &nbsp;♪</p>")
 	fetchBiography();
-
 }
 
 function incorrectAnswer(){
@@ -94,5 +93,11 @@ function loadIndex(){
 		$(".text_logo").fadeIn(1000);
 		$("form.write").fadeIn(2000);
 		$("form.game").fadeIn(3000);
+}
+
+function showWriteButton(){
+	$("select.write").on("click", function(){
+		$("input.write").fadeIn(800);
+	})	
 }
 

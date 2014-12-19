@@ -3,6 +3,7 @@
 <p>
 	<div class='author_select'>
 		<select class="write">
+			<option selected="true" style="display:none;">Select Author</option>
 			<option value="austen">Jane Austen</option>
 			<option value="dickens">Charles Dickens</option>
 			<option value="fitzgerald">F. Scott Fitzgerald</option>
@@ -17,14 +18,15 @@
 	</div>
 </p>
 
+<div>
+	<input class="write" type="submit" value="Write!">
+</div>
+
 <div class="paper">
 	<div class="passage">
 	</div>
 </div>
 
-<div>
-	<input class="write" type="submit" value="Write!">
-</div>
 
 <script charset="utf-8">
 	
@@ -37,6 +39,8 @@
 			el: $('div.passage')
 		});
 		$("div.paper").hide();
+		$("input.write").hide();
+		showWriteButton();
 		submitAuthor();
 
 	})
