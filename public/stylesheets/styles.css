@@ -95,3 +95,8 @@ h1.header {
 	display: block;
 	text-align: center;
 }
+
+div.footer{
+	margin-bottom: 20px;
+	color: #FFF;
+}
