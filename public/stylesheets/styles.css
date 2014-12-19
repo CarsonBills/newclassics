@@ -38,8 +38,9 @@ div.author_select{
 	text-align: center;
 	width: 240px;
 	height: 34px;
-	background: #7FC7FF;
+	background: url(/images/new_arrow.png) no-repeat right #FFF;
 }
+
 .author_select select{
 	background: transparent;
 	width: 240px;
@@ -51,6 +52,7 @@ div.author_select{
 	height: 35px;
 	-webkit-appearance: none;
 }
+
 form {
 	display: block;
 	text-align: center;
@@ -71,14 +73,13 @@ h2.welcome {
 
 div.header {
 	margin-top: 5%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
+	margin-left: 0;
+	margin-right: 0;
 }
 input {
 	font-family: 'Lato', sans-serif;
 	font-size: 24px;
-	background-color: #7FC7FF;
+	background-color: #FFF;
 	border: 0;
 }
 input.guess {
