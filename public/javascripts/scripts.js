@@ -91,8 +91,8 @@ function loadIndex(){
 		$("form.write").hide();
 		$("form.game").hide();
 		$(".text_logo").fadeIn(1000);
-		$("form.write").fadeIn(2000);
-		$("form.game").fadeIn(3000);
+		$("form.write").delay(1000).fadeIn(1000);
+		$("form.game").delay(2000).(fadeIn(1000);
 }
 
 function showWriteButton(){
